@@ -1,4 +1,4 @@
---[[ return {
+return {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
     dependencies = {
@@ -43,9 +43,9 @@
             },
         },
     },
-} ]]
+} 
 
-return {
+--[[ return {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
     dependencies = {
@@ -114,4 +114,4 @@ return {
             },
         },
     },
-}
+} ]]
