@@ -34,6 +34,9 @@ return {
                     require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
                 end,
             },
+            completion = {
+                keyword_length = 2,
+            },
             sources = cmp.config.sources {
                 { name = 'nvim_lsp' },
                 { name = 'path' },
@@ -78,18 +81,18 @@ return {
             },
             formatting = {
                 format = function(entry, vim_item)
-                  vim_item = lspkind.cmp_format({
-                    mode = 'symbol', 
-                    maxwidth = function() return math.floor(0.1 * vim.o.columns) end,
-                    ellipsis_char = '...', 
-                    show_labelDetails = true, 
-                    before = nil 
-                  })(entry, vim_item)
-                  vim_item.menu = nil 
-                  vim_item.abbr = vim_item.abbr:match("^[^(]*")
-                  return vim_item
+                    vim_item = lspkind.cmp_format({
+                        mode = 'symbol', 
+                        maxwidth = function() return math.floor(0.1 * vim.o.columns) end,
+                        ellipsis_char = '...', 
+                        show_labelDetails = true, 
+                        before = nil 
+                    })(entry, vim_item)
+                    vim_item.menu = nil 
+                    vim_item.abbr = vim_item.abbr:match("^[^(]*")
+                    return vim_item
                 end
-              },
+            },
             experimental = {
                 ghost_text = true,
             }
