@@ -343,24 +343,24 @@
 		"description": "acms"
 	},
 	"cf": {
-        "prefix": "cf",
-        "body": [
-            "#include <bits/stdc++.h>\n",
-            "using namespace std;\n",
-            "typedef long long ll;\n",
-            "int main()",
-            "{",
-            "\tcin.tie(nullptr)->ios::sync_with_stdio(false);\n",
-            "\tint _;cin >>_;\n",
-            "\tauto sol = []() {",
-            "\t\t$1",
-            "\t};\n",
-            "\twhile (_--) {sol();}\n",
-            "\treturn 0;",
-            "}"
-        ],
-        "description": "cf"
-    },
+		"prefix": "cf",
+		"body": [
+			"#include <bits/stdc++.h>\n",
+			"using namespace std;\n",
+			"typedef long long ll;\n",
+			"void sol() {",
+			"\t$1",
+			"}\n",
+			"int main()",
+			"{",
+			"\tcin.tie(nullptr)->ios::sync_with_stdio(false);\n",
+			"\tint _;cin >>_;\n",
+			"\twhile (_--) {sol();}\n",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "cf"
+	},
 	"Mint": {
 		"prefix": "mint",
 		"body": [
